@@ -1,0 +1,22 @@
+--------------------------------------------
+clone git repo
+  1. In eclipse search for "git repositories" in the search (ctl+3)
+  2. choose clone git repository 
+  3. choose github and search "cs202Project"
+  4. click on the one by nhuntera and choose next until finish is an option
+  5. right click on the new repository in the repository window and choose pull (this will download the files for you)
+--------------------------------------------
+
+--------------------------------------------
+setting up ssh to commit and push
+  1. open preferences under Window/preferences and search ssh2
+  2. in the ssh2 preferences got to Key Management and generate an RSA key
+  3. copy the long string and save your private key with a password you will remember
+  4. go to https://github.com/settings/keys and add a new key
+  5. paste the key from eclipse into the new key field and add the key
+  6. make some changes to the project in elipse
+  7. right click the repository and click commit
+  8. drag the changes you want to push from the unstaged area to the staged area
+  7. make a commit message and click commit and push
+  8. if a window asking for location, connection, and authentication set connection to ssh and user to git
+-------------------------------------------
