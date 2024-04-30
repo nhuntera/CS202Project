@@ -20,3 +20,5 @@ setting up ssh to commit and push
   7. make a commit message and click commit and push
   8. if a window asking for location, connection, and authentication set connection to ssh and user to git
 -------------------------------------------
+
+TESTS
