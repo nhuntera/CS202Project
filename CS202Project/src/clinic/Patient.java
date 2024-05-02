@@ -1,4 +1,4 @@
-package patient;
+package clinic;
 import java.util.Scanner;
 import java.util.ArrayList;
 
