@@ -7,6 +7,7 @@ public class Physician {
 	// array of hours available in 24 time format
 	private int[] avalableHours;
 	private ArrayList<String> appointments;
+	
 //Constructor
 	public void physician(String name, int[] avalableHours) {
 		this.name = name;
@@ -24,7 +25,12 @@ public class Physician {
 	public int[] getAvalableHours() {
 		return avalableHours;
 	}
+
+	public ArrayList<String> getAppointments() {
+		return appointments;
+	}
 	
+//Methods
 	public Boolean isAvailable(int hour) {
 		 
 		for (int i = 0; i < avalableHours.length; i++) {
@@ -35,9 +41,10 @@ public class Physician {
 		return false;
 		
 	}
-	
-	public void addAppointment(String appointment) {
+
+	public void addAppointment(Patient patient, int hour) {
 		
+		String appointment = patient.getName() + " " + patient.getNationalId() + ": " + hour;
 		appointments.add(appointment);
 		
 	}
