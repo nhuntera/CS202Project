@@ -42,3 +42,4 @@ public class Clinic {
 			System.out.println("Sorry, no physician is available at that time.");
 		}
 	}
+}
