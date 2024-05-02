@@ -9,6 +9,10 @@ public class Physician {
 	private ArrayList<String> appointments;
 	
 //Constructor
+	
+	// hour is in 24 time eg 5am = 5 and 5pm = 17
+	// each hour should be listed in avalableHours 
+	//if physician is available from 6am to 10pm (6,7,8,9,10,11,12,13,14,15,16,17)
 	public void physician(String name, int[] avalableHours) {
 		this.name = name;
 		this.avalableHours = avalableHours;
