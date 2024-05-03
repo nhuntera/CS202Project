@@ -1,6 +1,4 @@
 package clinic;
-import java.util.Scanner;
-import java.util.ArrayList;
 
 //Define Patient class
 public class Patient {
