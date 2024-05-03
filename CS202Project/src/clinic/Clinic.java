@@ -41,10 +41,22 @@ public class Clinic {
 			if (physician.isAvailable(hour)) {
 				physician.addAppointment(patient, hour);
 				available = true;
+				System.out.println("Your appointment has been booked.");
 			}
 		}
 		if (!available) {
 			System.out.println("Sorry, no physician is available at that time.");
 		}
 	}
+	
+	public void ListAllAppointments() {
+		
+		for (Physician physician : physicians) {
+			System.out.print(physician.getName() + ": ");
+			physician.ListAppointments();
+		}
+		
+	}
+	
+	
 }

@@ -20,7 +20,7 @@ public class Physician {
 	 * 
 	 * Creates a new physician with a String name and available hours as an array of integers
 	 */
-	public void physician(String name, int[] availableHours) {
+	public Physician(String name, int[] availableHours) {
 		this.name = name;
 		this.availableHours = availableHours;
 		
