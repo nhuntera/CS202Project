@@ -7,6 +7,11 @@ public class Clinic {
 	private ArrayList<Patient> patients;
 	private ArrayList<Physician> physicians;
 	
+	/*
+	 * Constructor
+	 * 
+	 * Initializes patients and physician lists
+	 */
 	public Clinic() {
 		patients = new ArrayList<Patient>();
 		physicians = new ArrayList<Physician>();
@@ -26,7 +31,7 @@ public class Clinic {
 	 * @param patient
 	 * @param hour
 	 * 
-	 * attemps to book an appointment if available
+	 * Attempts to book an appointment if available adding it to the appointments list in the physician object
 	 */
 	public void bookAppointment(Patient patient, int hour) {
 		
